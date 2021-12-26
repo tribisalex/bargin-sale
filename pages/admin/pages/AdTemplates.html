@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bargin Sale</title>
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/png">
+    <script src="../assets/js/script.js" defer></script>
+    <script src="../assets/js/jquery-3.3.1.min.js"></script>
+    <script src="../assets/js/menu.js"></script>
+</head>
+
+<body>
+<div class="wrapper">
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header__inner">
+                <a href="../indexAdmin.html" class="header__logo">
+                    <img src="../assets/img/logo.png" alt="logo" class="header__logo-img">
+                </a>
+                <div class="menu-burger__header">
+                    <span></span>
+                </div>
+                <nav class="nav">
+                    <ul class="topmenu">
+                        <li><a href="../indexAdmin.html">Просмотр статистики</a></li>
+
+                        <li><a href="changeIndexPage.html">Контент</a>
+                            <ul class="submenu">
+                                <li><a href="changeIndexPage.html">Главная страница</a></li>
+                                <li><a href="changeFreelyEditContent.html">Статьи</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="moderators.html">Модераторы</a>
+                            <ul class="submenu">
+                                <li><a href="moderators.html">Модераторы</a></li>
+                                <li><a href="EffectivenessModerators.html">Эффективность модераторов</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="UserAds.html">Пользователи</a>
+                            <ul class="submenu">
+                                <li><a href="UserAds.html">Объявления пользователей</a></li>
+                                <li><a href="UserAccount.html">Аккаунты пользователей</a></li>
+                                <li><a href="CommercialAds.html">Коммерческие объявления</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="PaidServices.html">Монетизация</a>
+                            <ul class="submenu">
+                                <li><a href="PaidServices.html">Платные услуги</a></li>
+                                <li><a href="ListOfBanners.html">Список баннеров</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="">Настройки</a>
+                            <ul class="submenu">
+                                <li><a href="ListsOfCategories.html">Списки категорий, подкатегорий</a></li>
+                                <li><a href="AdTemplates.html">Шаблоны объявлений</a></li>
+                                <li><a href="SupportedLanguages.html">Поддерживаемые языки</a></li>
+                                <li><a href="CitiesCountries.html">Города и страны</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Templates -->
+        <div class="templates">
+            <div class="templates__name-page">
+                <h2>Управление шаблонами подачи объявлений</h2>
+            </div>
+            <form class="search-templates-form">
+                <div class="flex-row templates-form-item">
+                    <div>Язык</div>
+                    <select class="input templates-form-input">
+                        <option selected>русский</option>
+                        <option>английский</option>
+                        <option>немекий</option>
+                        <option>хинди</option>
+                    </select>
+                </div>
+                <input type="submit" class="button templates-form-button" name="Search-templates" Value="Найти"/>
+            </form>
+
+            <form class="templates-form">
+                <div class="flex-row templates-form-item">
+                    <div>Подкатегория</div>
+                    <select class="input templates-form-input">
+                        <option selected>Ноутбуки</option>
+                        <option>Видеокарты</option>
+                        <option>Процессоры</option>
+                        <option>Винчестеры</option>
+                    </select>
+                </div>
+                <div class="flex-row templates-form-item">
+                    <div>Язык</div>
+                    <select class="input templates-form-input">
+                        <option selected>русский</option>
+                        <option>английский</option>
+                        <option>немекий</option>
+                        <option>хинди</option>
+                    </select>
+                </div>
+                <div class="flex-row templates-form-item">
+                    <div>Текст шаблона</div>
+                    <textarea placeholder="Краткое описание"
+                              class="textarea templates-form-textarea"></textarea>
+                </div>
+                <input type="submit" class="button templates-form-button" name="Save-templates" Value="Сохранить"/>
+            </form>
+        </div>
+
+        <div class="templates-info">
+            <div class="templates-table">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Подкатегория</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Ноутбуки</td>
+                        <td><input type="checkbox"/></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Видеокарты</td>
+                        <td><input type="checkbox"/></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Процессоры</td>
+                        <td><input type="checkbox"/></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Процессоры</td>
+                        <td><input type="checkbox"/></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Винчестеры</td>
+                        <td><input type="checkbox"/></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Оперативная память</td>
+                        <td><input type="checkbox"/></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            Это футер
+        </footer>
+
+    </div>
+</div>
+</body>
+</html>

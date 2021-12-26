@@ -56,6 +56,22 @@ img {
   background-color: #cecece;
 }
 
+.textarea {
+  font-size: 13px;
+  font-family: 'Montserrat', sans-serif;
+  color: #2f3132;
+  line-height: 1.2;
+  padding: 5px;
+  border: none;
+  margin: 0 5px;
+  min-width: 120px;
+  box-shadow: 0 1px 0 1px rgba(0, 0, 0, .04);
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #cecece;
+}
+
 .flex-row {
   display: flex;
   flex-direction: row;
@@ -458,6 +474,28 @@ nav a {
 .list-of-banners-form-input__server {
   width: 70%;
 }
+
+/* templates */
+.templates {
+  width: 70%;
+}
+
+.search-templates-form {
+  margin-bottom: 25px;
+}
+
+.templates-form {
+  margin-bottom: 25px;
+}
+
+.templates-form-input {
+  width: 70%;
+}
+
+.templates-form-textarea {
+  width: 70%;
+}
+
 
 /* footer */
 .footer {

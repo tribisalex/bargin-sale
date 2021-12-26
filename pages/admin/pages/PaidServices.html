@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bargin Sale</title>
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/png">
+    <script src="../assets/js/script.js" defer></script>
+    <script src="../assets/js/jquery-3.3.1.min.js"></script>
+    <script src="../assets/js/menu.js"></script>
+</head>
+
+<body>
+<div class="wrapper">
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header__inner">
+                <a href="../indexAdmin.html" class="header__logo">
+                    <img src="../assets/img/logo.png" alt="logo" class="header__logo-img">
+                </a>
+                <div class="menu-burger__header">
+                    <span></span>
+                </div>
+                <nav class="nav">
+                    <ul class="topmenu">
+                        <li><a href="../indexAdmin.html">Просмотр статистики</a></li>
+
+                        <li><a href="changeIndexPage.html">Контент</a>
+                            <ul class="submenu">
+                                <li><a href="changeIndexPage.html">Главная страница</a></li>
+                                <li><a href="changeFreelyEditContent.html">Статьи</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="moderators.html">Модераторы</a>
+                            <ul class="submenu">
+                                <li><a href="moderators.html">Модераторы</a></li>
+                                <li><a href="EffectivenessModerators.html">Эффективность модераторов</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="UserAds.html">Пользователи</a>
+                            <ul class="submenu">
+                                <li><a href="UserAds.html">Объявления пользователей</a></li>
+                                <li><a href="UserAccount.html">Аккаунты пользователей</a></li>
+                                <li><a href="CommercialAds.html">Коммерческие объявления</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="PaidServices.html">Монетизация</a>
+                            <ul class="submenu">
+                                <li><a href="PaidServices.html">Платные услуги</a></li>
+                                <li><a href="ListOfBanners.html">Список баннеров</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="">Настройки</a>
+                            <ul class="submenu">
+                                <li><a href="ListsOfCategories.html">Списки категорий, подкатегорий</a></li>
+                                <li><a href="AdTemplates.html">Шаблоны объявлений</a></li>
+                                <li><a href="SupportedLanguages.html">Поддерживаемые языки</a></li>
+                                <li><a href="CitiesCountries.html">Города и страны</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- paid services -->
+        <div class="paid-services">
+            <div class="paid-services__name-page">
+                <h2>Управление платными услугами</h2>
+            </div>
+            <form class="paid-services-form">
+                <div class="flex-row paid-services-form-item">
+                    <div>Название</div>
+                    <input type="text" class="input paid-services-form-input"/>
+                </div>
+                <div class="flex-row paid-services-form-item">
+                    <div>Стоимость</div>
+                    <input type="number" class="input paid-services-form-input"/>
+                </div>
+                <div class="flex-row paid-services-form-item">
+                    <div>Страна</div>
+                    <select class="input paid-services-form-input">
+                        <option selected>Республика Беларусь</option>
+                        <option>Российская федерация</option>
+                        <option>Украина</option>
+                        <option>Индия</option>
+                    </select>
+                </div>
+                <div class="flex-row paid-services-form-item">
+                    <div>Время действия в днях</div>
+                    <input type="number" class="input paid-services-form-input" name="t" value="1" min="1" max="100" step="1">
+                </div>
+                <div class="flex-row paid-services-form-item">
+                    <div>Краткое описание</div>
+                    <input type="text" class="input paid-services-form-input"/>
+                </div>
+                <input type="submit" class="button paid-services-form-button" name="Save-paid-services"
+                       Value="Сохранить"/>
+            </form>
+        </div>
+        <div class="paid-services-add">
+            <button class="button">Добавить</button>
+        </div>
+        <div class="paid-services-table">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Название</th>
+                    <th>Стоимость</th>
+                    <th>Страна</th>
+                    <th>Дней</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Поднятие</td>
+                    <td>2р.</td>
+                    <td>Республика Беларусь</td>
+                    <td>1</td>
+                    <td><input type="checkbox"/></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Выделение</td>
+                    <td>4р.</td>
+                    <td>Республика Беларусь</td>
+                    <td>1</td>
+                    <td><input type="checkbox"/></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Вот вам денег</td>
+                    <td>100р.</td>
+                    <td>Республика Беларусь</td>
+                    <td>1</td>
+                    <td><input type="checkbox"/></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Выделение на месяц</td>
+                    <td>20р.</td>
+                    <td>Республика Беларусь</td>
+                    <td>30</td>
+                    <td><input type="checkbox"/></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        Это футер
+    </footer>
+
+</div>
+</div>
+</body>
+</html>

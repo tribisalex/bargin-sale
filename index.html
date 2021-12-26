@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Bargin Sale</title>
+    <link rel="stylesheet" href="./assets/style.css" stylesheet>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+<!-- documentation -->
+<div class="documentation">
+    <div><a href="pages/freelyEditableContent.html">Требования к объявлению</a></div>
+    <div><a href="pages/freelyEditableContent.html">Правила использования сервиса</a></div>
+    <div><a href="pages/freelyEditableContent.html">Рекомендации о подготовке материала</a></div>
+    <div><a href="pages/freelyEditableContent.html">Советы о личной безопасности</a></div>
+</div>
+
+<div class="wrapper">
+
+    <div class="container">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="header__inner">
+                <a href="index.html" class="header__logo">
+                    <img src="assets/img/logo.png" alt="logo" class="header__logo-img">
+                </a>
+                <a href="pages/newAdvertisement.html">
+                    <div class="add-new-advertisement">
+                        <img src="assets/img/plus_add_increase_icon.png"/>
+                        <span class="add-new-advertisement-text">Разместить объявление</span>
+                    </div>
+                </a>
+                <div class="auth">
+                    <div class="auth-viz">
+                        <img class="auth__logo" src="assets/img/authLogo.png">
+                        <span class="auth__text">Моя учётная запись</span>
+                    </div>
+                    <nav class="nav nav__hidden">
+                        <li class="nav__link_li"><a class="nav__link" href="pages/userPage.html">Мои объявления</a></li>
+                        <li class="nav__link_li"><a class="nav__link" href="pages/newAdvertisement.html">Добавить
+                            объявления</a></li>
+                        <li class="nav__link_li"><a class="nav__link" href="pages/profilePage.html">Профиль</a></li>
+                        <li class="nav__link_li"><a class="nav__link" href="pages/message.html">Сообщения</a></li>
+                        <li class="nav__link_li"><a class="nav__link" href="pages/payOperation.html">Платёжные
+                            операции</a></li>
+                        <li class="nav__link_li"><a class="nav__link" href="pages/registrationPage.html">Выход</a></li>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <!-- Filter -->
+        <div class="filter">
+            <form action="" method="post" class="search__form">
+                <input type="search" name="" placeholder="поиск" class="input"/>
+                <input type="submit" name="" value="" class="submit"/>
+            </form>
+            <form action="" method="post" class="filter__form">
+                <div class="filter-form-blocks">
+                    <div class="filter-form-block">
+                        <div class="filter-form-item">
+                            <div>Категория</div>
+                            <select class="filter-select">
+                                <option selected class="select-item">Все</option>
+                                <option class="select-item">Недвижимость</option>
+                                <option class="select-item">Автомобили</option>
+                                <option class="select-item">Мебель</option>
+                                <option class="select-item">Детские игрушки</option>
+                                <option class="select-item">Одежда</option>
+                            </select>
+                        </div>
+                        <div class="filter-form-item">
+                            <div>Подкатегория</div>
+                            <select class="filter-select">
+                                <option selected class="select-item">Все</option>
+                                <option class="select-item">Квартиры</option>
+                                <option class="select-item">Частные дома</option>
+                                <option class="select-item">Арендные помещения</option>
+                            </select>
+                        </div>
+                        <div class="filter-form-item">
+                            <div>Бренд</div>
+                            <select class="filter-select">
+                                <option selected class="select-item">Все</option>
+                                <option class="select-item">Apple</option>
+                                <option class="select-item">Huawei</option>
+                                <option class="select-item">Aser</option>
+                                <option class="select-item">Asus</option>
+                                <option class="select-item">HP</option>
+                            </select>
+                        </div>
+                        <div class="filter-form-item">
+                            Год выпуска:
+                            <select class="filter-select filter-select-year">
+                                <option selected class="select-item">2021</option>
+                                <option class="select-item">1980</option>
+                                <option class="select-item">1981</option>
+                                <option class="select-item">1982</option>
+                                <option class="select-item">1983</option>
+                                <option class="select-item">1984</option>
+                                <option class="select-item">1985</option>
+                                <option class="select-item">1986</option>
+                                <option class="select-item">1987</option>
+                                <option class="select-item">1988</option>
+                                <option class="select-item">1989</option>
+                                <option class="select-item">1990</option>
+                                <option class="select-item">1991</option>
+                                <option class="select-item">1992</option>
+                                <option class="select-item">1993</option>
+                                <option class="select-item">1994</option>
+                                <option class="select-item">1995</option>
+                                <option class="select-item">1996</option>
+                                <option class="select-item">1997</option>
+                                <option class="select-item">1998</option>
+                                <option class="select-item">1999</option>
+                                <option class="select-item">2000</option>
+                                <option class="select-item">2001</option>
+                                <option class="select-item">2002</option>
+                                <option class="select-item">2003</option>
+                                <option class="select-item">2004</option>
+                                <option class="select-item">2005</option>
+                                <option class="select-item">2006</option>
+                                <option class="select-item">2007</option>
+                                <option class="select-item">2008</option>
+                                <option class="select-item">2009</option>
+                                <option class="select-item">2010</option>
+                                <option class="select-item">2011</option>
+                                <option class="select-item">2012</option>
+                                <option class="select-item">2013</option>
+                                <option class="select-item">2014</option>
+                                <option class="select-item">2015</option>
+                                <option class="select-item">2016</option>
+                                <option class="select-item">2017</option>
+                                <option class="select-item">2018</option>
+                                <option class="select-item">2019</option>
+                                <option class="select-item">2020</option>
+                            </select> -
+                            <select class="filter-select filter-select-year">
+                                <option selected class="select-item">2021</option>
+                                <option class="select-item">1980</option>
+                                <option class="select-item">1981</option>
+                                <option class="select-item">1982</option>
+                                <option class="select-item">1983</option>
+                                <option class="select-item">1984</option>
+                                <option class="select-item">1985</option>
+                                <option class="select-item">1986</option>
+                                <option class="select-item">1987</option>
+                                <option class="select-item">1988</option>
+                                <option class="select-item">1989</option>
+                                <option class="select-item">1990</option>
+                                <option class="select-item">1991</option>
+                                <option class="select-item">1992</option>
+                                <option class="select-item">1993</option>
+                                <option class="select-item">1994</option>
+                                <option class="select-item">1995</option>
+                                <option class="select-item">1996</option>
+                                <option class="select-item">1997</option>
+                                <option class="select-item">1998</option>
+                                <option class="select-item">1999</option>
+                                <option class="select-item">2000</option>
+                                <option class="select-item">2001</option>
+                                <option class="select-item">2002</option>
+                                <option class="select-item">2003</option>
+                                <option class="select-item">2004</option>
+                                <option class="select-item">2005</option>
+                                <option class="select-item">2006</option>
+                                <option class="select-item">2007</option>
+                                <option class="select-item">2008</option>
+                                <option class="select-item">2009</option>
+                                <option class="select-item">2010</option>
+                                <option class="select-item">2011</option>
+                                <option class="select-item">2012</option>
+                                <option class="select-item">2013</option>
+                                <option class="select-item">2014</option>
+                                <option class="select-item">2015</option>
+                                <option class="select-item">2016</option>
+                                <option class="select-item">2017</option>
+                                <option class="select-item">2018</option>
+                                <option class="select-item">2019</option>
+                                <option class="select-item">2020</option>
+                            </select>
+                        </div>
+                        <div class="filter-form-item">
+                            <div>Цена:</div>
+                            <div class="price-place">
+                                <input class="filter-input" placeholder="0.00 BYN" type="text"/>
+                                <input class="filter-input" placeholder="0.00 BYN" type="text"/>
+                            </div>
+                        </div>
+                        <div class="filter-form-item">
+                            <div>Состояние товара (%):</div>
+                            <input class="condition" name="range" type="range" min="0" max="100" step="1"/>
+                        </div>
+                        <div class="filter-form-item">
+                            <div>Цвет:</div>
+                            <select class="filter-select">
+                                <option selected class="select-item">Все</option>
+                                <option class="select-item">Белый</option>
+                                <option class="select-item">Чёрный</option>
+                                <option class="select-item">Красный</option>
+                                <option class="select-item">Зелёный</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="filter-form-block">
+                        <div class="filter-form-item">
+                            <div>Полный ли комплект:</div>
+                            <input type="checkbox"/>
+                        </div>
+                        <div class="filter-form-item">
+                            <div>
+                                <span> Купить</span>
+                                <input name="buy" value="buy" type="radio"/>
+                            </div>
+                            <div>
+                                <span>Продать</span>
+                                <input name="buy" value="sale" type="radio"/>
+                            </div>
+                        </div>
+                        <div class="filter-form-item">
+                            <div>Лот:</div>
+                            <div>
+                                <span>активный:</span>
+                                <input name="status" alue="active" type="radio"/>
+                            </div>
+                            <div>
+                                <span>завершённый:</span>
+                                <input name="status" value="noactive" type="radio"/>
+                            </div>
+                        </div>
+                        <div class="filter-form-item">
+                            <div>Продавец согласен на безопасную сделку?</div>
+                            <input type="checkbox"/>
+                        </div>
+                        <div class="filter-form-item">
+                            <div>Продавец согласен на обмен?</div>
+                            <input type="checkbox"/>
+                        </div>
+                        <div class="filter-form-item">
+                            <div>Продавец может послать товар службой доставки?</div>
+                            <input type="checkbox"/>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <input type="submit" name="Search" value="Найти" class="filter-submit"/>
+                </div>
+                <div>
+                    <a href="#" class="filter-submit">Сравнить объявления</a>
+                </div>
+            </form>
+        </div>
+
+        <!-- объявления -->
+        <div class="advertisements">
+            <div class="sorting">
+                <div class="sorting-item">Сортировка</div>
+                <div class="sorting-item"><a href=#">A &#8594 Я</a></div>
+                <div class="sorting-item"><a href=#>Новые/Старые</a></div>
+                <div class="sorting-item"><a href=#>Дешёвые/Дорогие</a></div>
+            </div>
+
+            <div class="advertisements-item">
+                <div class="advertisement">
+                    <div class="advertisement-name">
+                        <h3>Какой-то заголовок в две строки</h3>
+                    </div>
+                    <div class="advertisement-img">
+                        <img src="assets/img/97899257_w640_h640_noski-v-share.jpg" alt="img"/>
+                    </div>
+                    <div class="advertisement-decription">
+                        Описание продукта, настолько красивое, что клиент будет готов купить все это без разбора. И даже
+                        товар забирать не будет: просто деньги нам отдаст и доволен останется
+                    </div>
+                    <div class="advertisement-date">
+                        10.11.2021
+                    </div>
+                    <div class="advertisement-price">
+                        800 BYN
+                    </div>
+                    <div><a href="pages/advertisement.html">Подробнее</a></div>
+                    <div><a href="">Добавить в сравнение</a></div>
+                </div>
+
+                <div class="advertisement">
+                    <div class="advertisement-name">
+                        <h3>Какой-то заголовок в две строки</h3>
+                    </div>
+                    <div class="advertisement-img">
+                        <img src="assets/img/97899257_w640_h640_noski-v-share.jpg" alt="img"/>
+                    </div>
+                    <div class="advertisement-decription">
+                        Описание продукта, настолько красивое, что клиент будет готов купить все это без разбора. И даже
+                        товар забирать не будет: просто деньги нам отдаст и доволен останеться
+                    </div>
+                    <div class="advertisement-date">
+                        10.11.2021
+                    </div>
+                    <div class="advertisement-price">
+                        800 BYN
+                    </div>
+                    <div><a href="pages/advertisement.html">Подробнее</a></div>
+                    <div><a href="">Добавить в сравнение</a></div>
+                </div>
+
+                <div class="advertisement">
+                    <div class="advertisement-name">
+                        <h3>Какой-то заголовок в две строки</h3>
+                    </div>
+                    <div class="advertisement-img">
+                        <img src="assets/img/97899257_w640_h640_noski-v-share.jpg" alt="img"/>
+                    </div>
+                    <div class="advertisement-decription">
+                        Описание продукта, настолько красивое, что клиент будет готов купить все это без разбора. И даже
+                        товар забирать не будет: просто деньги нам отдаст и доволен останеться
+                    </div>
+                    <div class="advertisement-date">
+                        10.11.2021
+                    </div>
+                    <div class="advertisement-price">
+                        800 BYN
+                    </div>
+                    <div><a href="pages/advertisement.html">Подробнее</a></div>
+                    <div><a href="">Добавить в сравнение</a></div>
+                </div>
+
+                <div class="advertisement">
+                    <div class="advertisement-name">
+                        <h3>Какой-то заголовок в две строки</h3>
+                    </div>
+                    <div class="advertisement-img">
+                        <img src="assets/img/97899257_w640_h640_noski-v-share.jpg" alt="img"/>
+                    </div>
+                    <div class="advertisement-decription">
+                        Описание продукта, настолько красивое, что клиент будет готов купить все это без разбора. И
+                        даже товар забирать не будет: просто деньги нам отдаст и доволен останеться
+                    </div>
+                    <div class="advertisement-date">
+                        10.11.2021
+                    </div>
+                    <div class="advertisement-price">
+                        800 BYN
+                    </div>
+                    <div><a href="pages/advertisement.html">Подробнее</a></div>
+                    <div><a href="">Добавить в сравнение</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="banner">
+            VIP Banner <br>
+            Здесь может быть ваша реклама
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-item">
+                <div>
+                    <a href="#">Некоторая правовая информация об обладателе ресурса</a><br>
+                    <a href="#">Контакты для связи</a><br>
+                    <a href="#">Ссылка на социальные сети</a><br>
+                    <a href="#">Ссылка на скачивание приложения для разных платформ</a><br>
+                    <a href="#">Ссылка для перехода на страницу для рекламодателей</a><br>
+                    <a href="#">Текущее количество объявлений в базе</a><br>
+                    <a href="#">Некоторая правовая информация об обладателе ресурса</a><br>
+                </div>
+                <div>
+                    <a href="#">Политика о данных пользователей</a><br>
+                    <a href="#"> Политика использования cookie</a><br>
+                    <a href="#">Способы оплаты и цены</a><br>
+                    <a href="#">Помощь</a><br>
+                    <a href="#">Вакансии</a><br>
+                    <a href="#">О сайте</a><br>
+                    <a href="#">Частые вопросы</a><br>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+</div>
+</body>
+</html>

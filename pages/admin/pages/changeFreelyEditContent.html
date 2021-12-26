@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Bargin Sale</title>
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/png">
+    <script src="#" defer></script>
+    <script src="../ckeditor/ckeditor.js"></script>
+</head>
+
+<body>
+<div class="wrapper">
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header__inner">
+                <a href="../indexAdmin.html" class="header__logo">
+                    <img src="../assets/img/logo.png" alt="logo" class="header__logo-img">
+                </a>
+                <nav>
+                    <ul class="topmenu">
+                        <li><a href="../indexAdmin.html">Просмотр статистики</a></li>
+
+                        <li><a href="changeIndexPage.html">Контент</a>
+                            <ul class="submenu">
+                                <li><a href="changeIndexPage.html">Главная страница</a></li>
+                                <li><a href="changeFreelyEditContent.html">Статьи</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="moderators.html">Модераторы</a>
+                            <ul class="submenu">
+                                <li><a href="moderators.html">Модераторы</a></li>
+                                <li><a href="EffectivenessModerators.html">Эффективность модераторов</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="users.html">Пользователи</a>
+                            <ul class="submenu">
+                                <li><a href="UserAds.html">Объявления пользователей</a></li>
+                                <li><a href="UserAccount.html">Аккаунты пользователей</a></li>
+                                <li><a href="CommercialAds.html">Коммерческие объявления</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="Monetization.html">Монетизация</a>
+                            <ul class="submenu">
+                                <li><a href="PaidServices.html">Платные услуги</a></li>
+                                <li><a href="ListOfBanners.html">Список баннеров</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="">Настройки</a>
+                            <ul class="submenu">
+                                <li><a href="ListsOfCategories.html">Списки категорий, подкатегорий</a></li>
+                                <li><a href="AdTemplates.html">Шаблоны объявлений</a></li>
+                                <li><a href="SupportedLanguages.html">Поддерживаемые языки</a></li>
+                                <li><a href="CitiesCountries.html">Города и страны</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Change Content -->
+        <div class="change-content">
+            <div>
+                <div>
+                    <form>
+                        <div class="change-content-form-item">
+                            <h2>Информационные страницы</h2>
+                        </div>
+                        <div class="change-content-form-button">Создать</div>
+                        <div class="change-content-form-item">
+                            <div>Человекоподобный URL</div>
+                            <input type="text" class="change-content-form-input"/>
+                        </div>
+                        <div class="change-content-form-item">
+                            <div>Заголовок вкладки (текст в title)</div>
+                            <input type="text" class="change-content-form-input"/>
+                        </div>
+                        <div class="change-content-form-item">
+                            <div>Текст SEO (meta)</div>
+                            <input type="text" class="change-content-form-input"/>
+                        </div>
+                        <div class="change-content-form-item">
+                            <div>Заголовок страницы (текст в header)</div>
+                            <input type="text" class="change-content-form-input"/>
+                        </div>
+                        <div class="change-content-form-item">
+                            <div>Язык</div>
+                            <select class="change-content-form-input    ">
+                                <option>Русский</option>
+                                <option>Английский</option>
+                                <option>Немецкий</option>
+                                <option>Испанский</option>
+                                <option>Французский</option>
+                                <option>Португальский</option>
+                                <option>Хинди</option>
+                            </select>
+                        </div>
+                        <div>
+                            <textarea name="editor1" id="editor1" rows="10" cols="80">
+                                123
+                            </textarea>
+                            <script>
+                              // Replace the <textarea id="editor1"> with a CKEditor 4
+                              // instance, using default configuration.
+                              CKEDITOR.replace('editor1');
+                            </script>
+                        </div>
+                        <input type="submit" class="change-content-form-button" name="Save" Value="Сохранить"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="posts">
+            <table class="table">
+                <thead>
+                <tr>
+                    <td style="">ID</td>
+                    <td>Заголовок</td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Статья номер один</td>
+                    <td><input type="checkbox"/></td>
+                </tr>
+                <tr>
+                    <td>Статья номер два</td>
+                    <td><input type="checkbox"/></td>
+                </tr>
+                <tr>
+                    <td>Ещё что-то информативное</td>
+                    <td><input type="checkbox"/></td>
+                </tr>
+                <tr>
+                    <td>Ещё страницы для текста</td>
+                    <td><input type="checkbox"/></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            Это футер
+        </footer>
+
+    </div>
+</div>
+</body>
+</html>

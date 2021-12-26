@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bargin Sale</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+    <script src="assets/js/script.js" defer></script>
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/menu.js"></script>
+</head>
+
+<body>
+<div class="wrapper">
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header__inner">
+                <a href="indexAdmin.html" class="header__logo">
+                    <img src="assets/img/logo.png" alt="logo" class="header__logo-img">
+                </a>
+                <div class="menu-burger__header">
+                    <span></span>
+                </div>
+                <nav class="nav">
+                    <ul class="topmenu">
+                        <li><a href="indexAdmin.html">Просмотр статистики</a></li>
+
+                        <li><a href="pages/changeIndexPage.html">Контент</a>
+                            <ul class="submenu">
+                                <li><a href="pages/changeIndexPage.html">Главная страница</a></li>
+                                <li><a href="pages/changeFreelyEditContent.html">Статьи</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="pages/moderators.html">Модераторы</a>
+                            <ul class="submenu">
+                                <li><a href="pages/moderators.html">Модераторы</a></li>
+                                <li><a href="pages/EffectivenessModerators.html">Эффективность модераторов</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="pages/UserAds.html">Пользователи</a>
+                            <ul class="submenu">
+                                <li><a href="pages/UserAds.html">Объявления пользователей</a></li>
+                                <li><a href="pages/UserAccount.html">Аккаунты пользователей</a></li>
+                                <li><a href="pages/CommercialAds.html">Коммерческие объявления</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="pages/PaidServices.html">Монетизация</a>
+                            <ul class="submenu">
+                                <li><a href="pages/PaidServices.html">Платные услуги</a></li>
+                                <li><a href="pages/ListOfBanners.html">Список баннеров</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="">Настройки</a>
+                            <ul class="submenu">
+                                <li><a href="pages/ListsOfCategories.html">Списки категорий, подкатегорий</a></li>
+                                <li><a href="pages/AdTemplates.html">Шаблоны объявлений</a></li>
+                                <li><a href="pages/SupportedLanguages.html">Поддерживаемые языки</a></li>
+                                <li><a href="pages/CitiesCountries.html">Города и страны</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Статистика -->
+        <div class="statistic">
+
+            <!-- объявления -->
+            <div class="statistic-item">
+                <form class="form-statistic-item">
+                    <div>
+                        <h2>Объявления</h2>
+                    </div>
+                    <div class="choice-date">
+                        <input type="date" class="choice-date-input">
+                        <input type="date" class="choice-date-input">
+                        <input class="choice-date-button" type="submit" name="check1" value="Проверить"/>
+                    </div>
+                    <div class="table-place-statistic">
+                        <table class="table table-statistic">
+                            <tbody>
+                            <tr>
+                                <td><input name="statistic-advertisement" type="radio"></td>
+                                <td>Всего создано объявлений</td>
+                                <td>13256</td>
+                            </tr>
+                            <tr>
+                                <td><input name="statistic-advertisement" type="radio"></td>
+                                <td>Количество активных объявлений</td>
+                                <td>12360</td>
+                            </tr>
+                            <tr>
+                                <td><input name="statistic-advertisement" type="radio"></td>
+                                <td>Объявлений на модерации</td>
+                                <td>120</td>
+                            </tr>
+                            <tr>
+                                <td><input name="statistic-advertisement" type="radio"></td>
+                                <td>Заблокированных объявлений</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td><input name="statistic-advertisement" type="radio"></td>
+                                <td>Количество завершённых объявлений</td>
+                                <td>1230</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="statistic-img">
+                        <img src="assets/img/graph.jpg">
+                    </div>
+                </form>
+            </div>
+
+            <!-- Пользователи-->
+            <div class="statistic-item">
+                <form class="form-statistic-item">
+                    <div>
+                        <h2>Пользователи</h2>
+                    </div>
+                    <div class="choice-date">
+                        <input type="date" class="choice-date-input">
+                        <input type="date" class="choice-date-input">
+                        <input class="choice-date-button" type="submit" name="check2" value="Проверить"/>
+                    </div>
+                    <div class="table-place-statistic">
+                        <table class="table table-statistic">
+                            <tbody>
+                            <tr>
+                                <td><input name="statistic-advertisement" type="radio"></td>
+                                <td>Всего прошло регистрацию в системе</td>
+                                <td>8562</td>
+                            </tr>
+                            <tr>
+                                <td><input name="statistic-advertisement" type="radio"></td>
+                                <td>Пользователей с активным профилем</td>
+                                <td>7255</td>
+                            </tr>
+                            <tr>
+                                <td><input name="statistic-advertisement" type="radio"></td>
+                                <td>Пользователей, ожидающих активацию</td>
+                                <td>56</td>
+                            </tr>
+                            <tr>
+                                <td><input name="statistic-advertisement" type="radio"></td>
+                                <td>Заблокированных пользователей</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td style="opacity: 0"> 1 </td>
+                                <td style="opacity: 0"> 1 </td>
+                                <td style="opacity: 0"> 1 </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="statistic-img">
+                        <img src="assets/img/graph.jpg">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            Это футер
+        </footer>
+
+    </div>
+</div>
+</body>
+</html>

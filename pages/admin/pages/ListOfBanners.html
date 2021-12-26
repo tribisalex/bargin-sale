@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bargin Sale</title>
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/png">
+    <script src="../assets/js/script.js" defer></script>
+    <script src="../assets/js/jquery-3.3.1.min.js"></script>
+    <script src="../assets/js/menu.js"></script>
+</head>
+
+<body>
+<div class="wrapper">
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header__inner">
+                <a href="../indexAdmin.html" class="header__logo">
+                    <img src="../assets/img/logo.png" alt="logo" class="header__logo-img">
+                </a>
+                <div class="menu-burger__header">
+                    <span></span>
+                </div>
+                <nav class="nav">
+                    <ul class="topmenu">
+                        <li><a href="../indexAdmin.html">Просмотр статистики</a></li>
+
+                        <li><a href="changeIndexPage.html">Контент</a>
+                            <ul class="submenu">
+                                <li><a href="changeIndexPage.html">Главная страница</a></li>
+                                <li><a href="changeFreelyEditContent.html">Статьи</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="moderators.html">Модераторы</a>
+                            <ul class="submenu">
+                                <li><a href="moderators.html">Модераторы</a></li>
+                                <li><a href="EffectivenessModerators.html">Эффективность модераторов</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="UserAds.html">Пользователи</a>
+                            <ul class="submenu">
+                                <li><a href="UserAds.html">Объявления пользователей</a></li>
+                                <li><a href="UserAccount.html">Аккаунты пользователей</a></li>
+                                <li><a href="CommercialAds.html">Коммерческие объявления</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="PaidServices.html">Монетизация</a>
+                            <ul class="submenu">
+                                <li><a href="PaidServices.html">Платные услуги</a></li>
+                                <li><a href="ListOfBanners.html">Список баннеров</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="">Настройки</a>
+                            <ul class="submenu">
+                                <li><a href="ListsOfCategories.html">Списки категорий, подкатегорий</a></li>
+                                <li><a href="AdTemplates.html">Шаблоны объявлений</a></li>
+                                <li><a href="SupportedLanguages.html">Поддерживаемые языки</a></li>
+                                <li><a href="CitiesCountries.html">Города и страны</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- list of banners -->
+        <div class="list-of-banners">
+            <div class="list-of-banners__name-page">
+                <h2>Управление баннерами</h2>
+            </div>
+            <div class="list-of-banners-add">
+                <button class="button">Добавить</button>
+            </div>
+
+            <div class="banners-info">
+                <div class="banners-info__img">
+                    <img src="../assets/img/reklama.jpg"/>
+                </div>
+                <div class="banners-info__text">
+                    <div>ID баннера: 124</div>
+                    <div>Рекламодатель: ООО "Невское"</div>
+                    <div>Страна показа: РФ</div>
+                    <div>Позиция на сайте: main_bottom</div>
+                    <div>Дата добавления: 23.11.2021</div>
+                    <div>Показ: 23.11.2021-28.11.2021</div>
+                </div>
+                <div class="banners-info__buttons">
+                    <button class="button banners-info__button">Редактировать</button>
+                    <button class="button banners-info__button">Удалить</button>
+                </div>
+            </div>
+
+            <div class="banners-info">
+                <div class="banners-info__img">
+                    <img src="../assets/img/reklama1.jpg"/>
+                </div>
+                <div class="banners-info__text">
+                    <div>ID баннера: 025</div>
+                    <div>Рекламодатель: ООО "Иванов&Co"</div>
+                    <div>Страна показа: Республика Беларусь</div>
+                    <div>Позиция на сайте: main_bottom</div>
+                    <div>Дата добавления: 23.11.2021</div>
+                    <div>Показ: 23.11.2021-28.11.2021</div>
+                </div>
+                <div class="banners-info__buttons">
+                    <button class="button banners-info__button">Редактировать</button>
+                    <button class="button banners-info__button">Удалить</button>
+                </div>
+            </div>
+
+            <form class="list-of-banners-form">
+                <div class="flex-row list-of-banners-form-item">
+                    <div>ID баннера: 124</div>
+                </div>
+                <div class="flex-row list-of-banners-form-item">
+                    <div>Рекламодатель: ООО "Невское"</div>
+                    <input type="text" class="input list-of-banners-form-input"/>
+                </div>
+                <div class="flex-row list-of-banners-form-item">
+                    <div>Страна показа: Российская Федерация</div>
+                    <select class="input list-of-banners-form-input">
+                        <option selected>Республика Беларусь</option>
+                        <option>Российская федерация</option>
+                        <option>Украина</option>
+                        <option>Индия</option>
+                    </select>
+                </div>
+                <div class="flex-row list-of-banners-form-item">
+                    <div>Позиция на сайте: main_bottom</div>
+                    <select class="input list-of-banners-form-input">
+                        <option selected>Республика Беларусь</option>
+                        <option>Российская федерация</option>
+                        <option>Украина</option>
+                        <option>Индия</option>
+                    </select>
+                </div>
+                <div class="flex-row list-of-banners-form-item">
+                    <div>Дата добавления начала показа</div>
+                    <input type="date" class="input list-of-banners-form-input">
+                </div>
+                <div class="flex-row list-of-banners-form-item">
+                    <div>Дата оккнчания показа</div>
+                    <input type="date" class="input list-of-banners-form-input">
+                </div>
+                <div class="flex-row list-of-banners-form-item">
+                    <div>Ссылка для перехода пользователя</div>
+                    <input type="text" class="input list-of-banners-form-input"/>
+                </div>
+                <div class="flex-row list-of-banners-form-item">
+                    <div>Отображение баннера:</div>
+                    <div>
+                        <span>как img</span>
+                        <input name="visible" value="img" type="radio"/>
+                    </div>
+                    <div>
+                        <span>как iframe</span>
+                        <input name="status" value="iframe" type="radio"/>
+                    </div>
+                </div>
+                <div class="flex-row list-of-banners-form-item">
+                    <div>Ссылка на сам баннер</div>
+                    <div class="list-of-banners-form-input">
+                        <input type="text" class="input list-of-banners-form-input__server"/>
+                        <button class="button banners-info__button">Выбрать на сервере</button>
+                    </div>
+                </div>
+                <input type="submit" class="button list-of-banners-form-button" name="Save-list-of-banners"
+                       Value="Сохранить"/>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        Это футер
+    </footer>
+
+</div>
+</body>
+</html>

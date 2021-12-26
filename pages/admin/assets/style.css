@@ -496,6 +496,36 @@ nav a {
   width: 70%;
 }
 
+/* supported languages */
+.supported-languages-add {
+  margin-bottom: 25px;
+}
+
+.supported-languages {
+  width: 70%;
+  margin-bottom: 25px;
+}
+
+.supported-languages-form-input {
+  width: 70%;
+}
+
+/* cities countries*/
+
+.cities-form-input,
+.countries-form-input,
+.countries,
+.cities {
+  width: 70%;
+}
+
+.countries-add,
+.cities-add,
+.cities,
+.countries {
+  margin-bottom: 25px;
+}
+
 
 /* footer */
 .footer {

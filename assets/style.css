@@ -246,7 +246,7 @@ h1, h2, h3, h4, h5, h6 {
 /* search__form */
 .search__form {
   width: 430px;
-  margin-top: 10px;
+  margin: 10px 0;
   position: relative;
 }
 
@@ -323,7 +323,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .filter-form-item {
-  margin: 5px 0;
+  margin: 6px 0;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -416,7 +416,7 @@ input[type="search"] {
 
 /* ads */
 .sorting {
-  max-width: 50%;
+  max-width: 100%;
   display: flex;
   flex: auto;
   justify-content: flex-start;
@@ -439,6 +439,7 @@ input[type="search"] {
 .advertisements {
   display: flex;
   flex-direction: column;
+  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -453,7 +454,6 @@ input[type="search"] {
   background-color: #ded9d5;
   margin: 0 3px;
   width: 23%;
-  max-width: 300px;
   min-width: 200px;
   display: flex;
   flex-direction: column;
@@ -1210,7 +1210,7 @@ input[type="search"] {
 
 @media (max-width: 1200px) {
   .container {
-    padding: 15px;
+    padding: 0 15px;
   }
 
 
@@ -1224,8 +1224,9 @@ input[type="search"] {
 
 @media (max-width: 990px) {
   .header__inner {
-    justify-content: center;
+    justify-content: space-between;
     font-size: 14px;
+    padding: 0 10px;
   }
 
   .header__logo {
@@ -1235,7 +1236,12 @@ input[type="search"] {
   .filter {
     padding: 0 10px;
   }
+
+  .advertisement {
+    margin: 6px;
+  }
 }
+
 
 
 
@@ -1336,6 +1342,19 @@ input[type="search"] {
     align-items: center;
   }
 
+  .filter-form-block {
+    width: 100%;
+  }
+
+  .sorting {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .advertisement {
+    width: 45%;
+  }
+
 }
 
 
@@ -1348,6 +1367,7 @@ input[type="search"] {
     display: none;
   }
 
+
   .add-new-advertisement-text {
     display: none;
   }
@@ -1359,4 +1379,27 @@ input[type="search"] {
   .search__form {
     width: 300px;
   }
+
+  .filter-form-block {
+    min-width: 250px;
+  }
+
+  .filter-select {
+    min-width: 150px;
+    width: 150px;
+  }
+
+  .filter-input {
+    min-width: 40px;
+  }
+
+  .filter-select-year {
+    min-width: 40px;
+    width: 40px;
+  }
+
+  .advertisement {
+    width: 90%;
+  }
 }
+

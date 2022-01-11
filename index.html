@@ -2,21 +2,31 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bargin Sale</title>
-    <link rel="stylesheet" href="./assets/style.css" stylesheet>
+    <link rel="stylesheet" href="./assets/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
     <script src="js/script.js" defer></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/menu.js"></script>
 </head>
 <body>
 <!-- documentation -->
 <div class="documentation">
-    <div><a href="pages/freelyEditableContent.html">Требования к объявлению</a></div>
-    <div><a href="pages/freelyEditableContent.html">Правила использования сервиса</a></div>
-    <div><a href="pages/freelyEditableContent.html">Рекомендации о подготовке материала</a></div>
-    <div><a href="pages/freelyEditableContent.html">Советы о личной безопасности</a></div>
+    <div class="menu-burger__documentation">
+        <span></span>
+    </div>
+    <div class="documentation-ul">
+        <ul class="documentation-ul__topmenu">
+            <li><a href="pages/freelyEditableContent.html">Требования к объявлению</a></li>
+            <li><a href="pages/freelyEditableContent.html">Правила использования сервиса</a></li>
+            <li><a href="pages/freelyEditableContent.html">Рекомендации о подготовке материала</a></li>
+            <li><a href="pages/freelyEditableContent.html">Советы о личной безопасности</a></li>
+        </ul>
+    </div>
 </div>
 
 <div class="wrapper">
@@ -31,13 +41,13 @@
                 </a>
                 <a href="pages/newAdvertisement.html">
                     <div class="add-new-advertisement">
-                        <img src="assets/img/plus_add_increase_icon.png"/>
+                        <img src="assets/img/plus_add_increase_icon.png" alt="add-new-advertisement"/>
                         <span class="add-new-advertisement-text">Разместить объявление</span>
                     </div>
                 </a>
                 <div class="auth">
                     <div class="auth-viz">
-                        <img class="auth__logo" src="assets/img/authLogo.png">
+                        <img class="auth__logo" src="assets/img/authLogo.png" alt="auth-logo">
                         <span class="auth__text">Моя учётная запись</span>
                     </div>
                     <nav class="nav nav__hidden">
@@ -214,22 +224,22 @@
                         </div>
                         <div class="filter-form-item">
                             <div>
-                                <span> Купить</span>
+                                <label> Купить</label>
                                 <input name="buy" value="buy" type="radio"/>
                             </div>
                             <div>
-                                <span>Продать</span>
+                                <label>Продать</label>
                                 <input name="buy" value="sale" type="radio"/>
                             </div>
                         </div>
                         <div class="filter-form-item">
                             <div>Лот:</div>
                             <div>
-                                <span>активный:</span>
-                                <input name="status" alue="active" type="radio"/>
+                                <label>активный:</label>
+                                <input name="status" value="active" type="radio"/>
                             </div>
                             <div>
-                                <span>завершённый:</span>
+                                <label>завершённый:</label>
                                 <input name="status" value="noactive" type="radio"/>
                             </div>
                         </div>
@@ -273,7 +283,7 @@
                     <div class="advertisement-img">
                         <img src="assets/img/97899257_w640_h640_noski-v-share.jpg" alt="img"/>
                     </div>
-                    <div class="advertisement-decription">
+                    <div class="advertisement-description">
                         Описание продукта, настолько красивое, что клиент будет готов купить все это без разбора. И даже
                         товар забирать не будет: просто деньги нам отдаст и доволен останется
                     </div>
@@ -294,7 +304,7 @@
                     <div class="advertisement-img">
                         <img src="assets/img/97899257_w640_h640_noski-v-share.jpg" alt="img"/>
                     </div>
-                    <div class="advertisement-decription">
+                    <div class="advertisement-description">
                         Описание продукта, настолько красивое, что клиент будет готов купить все это без разбора. И даже
                         товар забирать не будет: просто деньги нам отдаст и доволен останеться
                     </div>
@@ -315,7 +325,7 @@
                     <div class="advertisement-img">
                         <img src="assets/img/97899257_w640_h640_noski-v-share.jpg" alt="img"/>
                     </div>
-                    <div class="advertisement-decription">
+                    <div class="advertisement-description">
                         Описание продукта, настолько красивое, что клиент будет готов купить все это без разбора. И даже
                         товар забирать не будет: просто деньги нам отдаст и доволен останеться
                     </div>
@@ -336,7 +346,7 @@
                     <div class="advertisement-img">
                         <img src="assets/img/97899257_w640_h640_noski-v-share.jpg" alt="img"/>
                     </div>
-                    <div class="advertisement-decription">
+                    <div class="advertisement-description">
                         Описание продукта, настолько красивое, что клиент будет готов купить все это без разбора. И
                         даже товар забирать не будет: просто деньги нам отдаст и доволен останеться
                     </div>

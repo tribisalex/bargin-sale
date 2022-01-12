@@ -2,25 +2,37 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Bargin Sale</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>User page Bargin Sale</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/png">
-    <script type="text/javascript" src="../js/script.js" defer></script>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/script.js" defer></script>
 </head>
 <body>
 
 <div class="wrapper">
     <!-- documentation -->
     <div class="documentation">
-        <div><a href="freelyEditableContent.html">Требования к объявлению</a></div>
-        <div><a href="freelyEditableContent.html">Правила использования сервиса</a></div>
-        <div><a href="freelyEditableContent.html">Рекомендации о подготовке материала</a></div>
-        <div><a href="freelyEditableContent.html">Советы о личной безопасности</a></div>
+        <div class="documentation-ul">
+            <ul class="documentation-ul__topmenu">
+                <li><a href="freelyEditableContent.html">Требования к объявлению</a></li>
+                <li><a href="freelyEditableContent.html">Правила использования сервиса</a></li>
+                <li><a href="freelyEditableContent.html">Рекомендации о подготовке материала</a></li>
+                <li><a href="freelyEditableContent.html">Советы о личной безопасности</a></li>
+            </ul>
+        </div>
+        <div class="menu-burger__documentation">
+            <span></span>
+        </div>
     </div>
-
     <div class="container">
 
         <!-- Header -->
@@ -28,6 +40,7 @@
             <div class="header__inner">
                 <a href="../index.html" class="header__logo">
                     <img src="../assets/img/logo.png" alt="logo" class="header__logo-img">
+                    <img src="../assets/img/favicon.png" alt="auth-logo-mini" class="header__logo-img__mini">
                 </a>
                 <a href="newAdvertisement.html">
                     <div class="add-new-advertisement">

@@ -630,12 +630,6 @@ input[type="search"] {
   margin-bottom: 15px;
 }
 
-/*.user-advertisement-info h3 {*/
-/*  text-align: center;*/
-/*  margin-bottom: 15px;*/
-/*  position: relative;*/
-/*}*/
-
 .user-advertisement-info__name:after {
   content: "";
   display: block;
@@ -774,11 +768,11 @@ input[type="search"] {
   align-items: center;
 }
 
+/* advertisement */
 .ads-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   padding: 0 10px;
 }
 
@@ -902,6 +896,10 @@ input[type="search"] {
   align-items: center;
 }
 
+.page-name {
+  text-align: center;
+}
+
 .user-agreement {
   display: flex;
   flex-direction: column;
@@ -909,11 +907,14 @@ input[type="search"] {
   align-items: center;
 }
 
+.user-agreement h3 {
+  text-align: center;
+}
+
 .user-agreement-text {
   text-align: justify;
   padding: 5px;
   font-size: 12px;
-
 }
 
 .user-agreement-input {
@@ -921,6 +922,7 @@ input[type="search"] {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  text-align: justify;
 }
 
 .registration {
@@ -934,7 +936,10 @@ input[type="search"] {
 }
 
 .registration img {
-  width: 250px;
+  width: 150px;
+  max-width: 200px;
+  margin-top: 15px;
+
 }
 
 .registration-logo {
@@ -954,7 +959,7 @@ input[type="search"] {
   max-width: 500px;
 }
 
-.registration-form-item {
+.registration-form__item {
   margin: 5px 0;
   width: 40%;
   min-width: 350px;
@@ -1562,7 +1567,10 @@ input[type="search"] {
     flex-direction: column;
     width: 100%;
     max-width: 200px;
+  }
 
+  .user-agreement-input {
+    font-size: 12px;
   }
 
 }
@@ -1624,7 +1632,20 @@ input[type="search"] {
     flex-direction: column;
   }
 
+  .registration-form {
+    width: 100%;
+    min-width: 250px;
+  }
 
+  .registration-form__item {
+    min-width: 250px;
+    flex-direction: column;
+  }
+
+  .registration-form__item__ax {
+    display: flex;
+    flex-direction: row;
+  }
 
 }
 

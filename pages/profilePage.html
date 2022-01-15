@@ -35,7 +35,6 @@
     </div>
 
     <div class="container">
-
         <!-- Header -->
         <header class="header">
             <div class="header__inner">
@@ -45,13 +44,13 @@
                 </a>
                 <a href="newAdvertisement.html">
                     <div class="add-new-advertisement">
-                        <img src="../assets/img/plus_add_increase_icon.png"/>
+                        <img src="../assets/img/plus_add_increase_icon.png" alt="add-advertisement"/>
                         <span class="add-new-advertisement-text">Разместить объявление</span>
                     </div>
                 </a>
                 <div class="auth">
                     <div class="auth-viz">
-                        <img class="auth__logo" src="../assets/img/authLogo.png">
+                        <img class="auth__logo" src="../assets/img/authLogo.png" alt="auth-logo">
                         <span class="auth__text">Моя учётная запись</span>
                     </div>
                     <nav class="nav nav__hidden">
@@ -70,20 +69,20 @@
 
         <div class="profile-page">
             <!-- profile date -->
-            <h2>Личные данные</h2>
-            <div class="profile-date">
-                <div class="profile-date-form">
-                    <form action="" method="post" class="registration-form">
-                        <input type="text" class="profile-form-input" placeholder="ФИО полностью"/>
+            <div class="profile-page__name"><h2>Личные данные</h2></div>
+            <div class="profile-page__date">
+                <div class="profile-page__date__forms">
+                    <form action="" method="post" class="profile-date__form">
+                        <input type="text" class="input" placeholder="ФИО полностью"/>
                         <div class="country">
-                            <select class="profile-form-select">
+                            <select class="select">
                                 <option selected>Страна</option>
                                 <option>Республика Беларусь</option>
                                 <option>Российская Федерация</option>
                                 <option>Украина</option>
                                 <option>Польша</option>
                             </select>
-                            <select class="profile-form-select">
+                            <select class="select">
                                 <option selected>Город</option>
                                 <option>Орша</option>
                                 <option>Минск</option>
@@ -95,51 +94,50 @@
                             <div>Частное лицо <input name="user" value="private" type="radio"/></div>
                             <div>Бизнес <input name="user" value="business" type="radio"/></div>
                         </div>
-                        <input class="profile-form-input" type="text" placeholder="Телефон"/>
-                        <input class="profile-form-input" type="email" placeholder="email"/>
-                        <input class="profile-form-input" type="text" placeholder="Логин"/>
-                        <input type="submit" class="profile-form-submit" name="Search" value="Сохранить"/>
+                        <input class="input" type="text" placeholder="Телефон"/>
+                        <input class="input" type="email" placeholder="email"/>
+                        <input class="input" type="text" placeholder="Логин"/>
+                        <input type="submit" class="submit" name="Search" value="Сохранить"/>
                     </form>
-                    <form action="" method="post" class="registration-form">
-                        <input class="profile-form-input" type="password" placeholder="Старый пароль"/>
-                        <input class="profile-form-input" type="password" placeholder="Новый пароль"/>
-                        <input class="profile-form-input" type="password" placeholder="Повторите новый пароль"/>
-                        <input type="submit" class="profile-form-submit" name="Search" value="Изменить пароль"/>
+                    <form action="" method="post" class="profile-password__form">
+                        <input class="input" type="password" placeholder="Старый пароль"/>
+                        <input class="input" type="password" placeholder="Новый пароль"/>
+                        <input class="input" type="password" placeholder="Повторите новый пароль"/>
+                        <input type="submit" class="submit" name="Search" value="Изменить пароль"/>
                     </form>
                 </div>
-                <div class="change-profile-logo">
+                <div class="profie-page__date__logo">
                     <img src="../assets/img/seller-photo.png" alt="logo">
                     <input type="file"/>
                 </div>
             </div>
         </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-item">
+                <div>
+                    <a href="#">Некоторая правовая информация об обладателе ресурса</a><br>
+                    <a href="#">Контакты для связи</a><br>
+                    <a href="#">Ссылка на социальные сети</a><br>
+                    <a href="#">Ссылка на скачивание приложения для разных платформ</a><br>
+                    <a href="#">Ссылка для перехода на страницу для рекламодателей</a><br>
+                    <a href="#">Текущее количество объявлений в базе</a><br>
+                    <a href="#">Некоторая правовая информация об обладателе ресурса</a><br>
+                </div>
+                <div>
+                    <a href="#">Политика о данных пользователей</a><br>
+                    <a href="#"> Политика использования cookie</a><br>
+                    <a href="#">Способы оплаты и цены</a><br>
+                    <a href="#">Помощь</a><br>
+                    <a href="#">Вакансии</a><br>
+                    <a href="#">О сайте</a><br>
+                    <a href="#">Частые вопросы</a><br>
+                </div>
+            </div>
+        </footer>
+
     </div>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-item">
-            <div>
-                <a href="#">Некоторая правовая информация об обладателе ресурса</a><br>
-                <a href="#">Контакты для связи</a><br>
-                <a href="#">Ссылка на социальные сети</a><br>
-                <a href="#">Ссылка на скачивание приложения для разных платформ</a><br>
-                <a href="#">Ссылка для перехода на страницу для рекламодателей</a><br>
-                <a href="#">Текущее количество объявлений в базе</a><br>
-                <a href="#">Некоторая правовая информация об обладателе ресурса</a><br>
-            </div>
-            <div>
-                <a href="#">Политика о данных пользователей</a><br>
-                <a href="#"> Политика использования cookie</a><br>
-                <a href="#">Способы оплаты и цены</a><br>
-                <a href="#">Помощь</a><br>
-                <a href="#">Вакансии</a><br>
-                <a href="#">О сайте</a><br>
-                <a href="#">Частые вопросы</a><br>
-            </div>
-        </div>
-    </footer>
-
-</div>
 </div>
 </body>
 </html>

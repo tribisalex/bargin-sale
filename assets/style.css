@@ -673,7 +673,6 @@ input[type="search"] {
   position: absolute;
   top: 100%;
   left: 0;
-  z-index: 1;
   transition: opacity .1s linear;
 }
 
@@ -698,20 +697,6 @@ input[type="search"] {
 .user-advertisement-info__buttons {
   display: flex;
   justify-content: center;
-}
-
-.btn {
-  cursor: pointer;
-  border: 2px solid #5d5d5d;
-  color: #2f3132;
-  font-size: 14px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  padding: 2px 5px;
-  min-width: 120px;
-  background-color: transparent;
-  text-align: center;
-  margin: 5px;
 }
 
 .button-block ul {
@@ -777,7 +762,6 @@ input[type="search"] {
   color: #122554;
   visibility: hidden;
   opacity: 0;
-  z-index: 10;
 }
 
 .button-block__submenu li {
@@ -787,6 +771,7 @@ input[type="search"] {
 .button-block__topmenu > li:hover .button-block__submenu {
   visibility: visible;
   opacity: 1;
+  z-index: 2000;
   transform: perspective(600px) rotateX(0deg);
 }
 

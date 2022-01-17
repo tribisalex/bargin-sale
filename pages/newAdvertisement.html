@@ -33,8 +33,8 @@
             <span></span>
         </div>
     </div>
-    <div class="container">
 
+    <div class="container">
         <!-- Header -->
         <header class="header">
             <div class="header__inner">
@@ -44,13 +44,13 @@
                 </a>
                 <a href="newAdvertisement.html">
                     <div class="add-new-advertisement">
-                        <img src="../assets/img/plus_add_increase_icon.png"/>
+                        <img src="../assets/img/plus_add_increase_icon.png" alt="add-new-advertisement"/>
                         <span class="add-new-advertisement-text">Разместить объявление</span>
                     </div>
                 </a>
                 <div class="auth">
                     <div class="auth-viz">
-                        <img class="auth__logo" src="../assets/img/authLogo.png">
+                        <img class="auth__logo" src="../assets/img/authLogo.png" alt="auth-logo">
                         <span class="auth__text">Моя учётная запись</span>
                     </div>
                     <nav class="nav nav__hidden">
@@ -73,7 +73,7 @@
             <div class="upload-images">
                 <form id="upload-container" method="POST" action="">
                     <img id="upload-image" src="../assets/img/upload.png">
-                    <div>
+                    <div class="upload-images__text">
                         <input id="file-input" type="file" name="file" multiple>
                         <label for="file-input">Выберите файл</label>
                         <span>или перетащите его сюда</span>
@@ -82,16 +82,16 @@
             </div>
 
             <div class="new-advertisement-form">
-                <form action="" method="post">
+                <form action="" method="post" class="new-advertisement-form">
                     <div class="new-advertisement-form-blocks">
-                        <div class="new-advertisement-form-block">
-                            <div class="new-advertisement-form-item">
+                        <div class="new-advertisement-form__block">
+                            <div class="new-advertisement-form__item">
                                 <div>Название товара</div>
-                                <input type="text" class="filter-input" placeholder="Название товара">
+                                <input type="text" class="input" placeholder="Название товара">
                             </div>
-                            <div class="new-advertisement-form-item">
+                            <div class="new-advertisement-form__item">
                                 <div>Выберите категорию:</div>
-                                <select class="filter-select">
+                                <select class="select">
                                     <option selected class="select-item">Категория</option>
                                     <option class="select-item">1</option>
                                     <option class="select-item">2</option>
@@ -99,9 +99,9 @@
                                     <option class="select-item">4</option>
                                 </select>
                             </div>
-                            <div class="new-advertisement-form-item">
+                            <div class="new-advertisement-form__item">
                                 <div>Выберите подкатегорию:</div>
-                                <select class="filter-select">
+                                <select class="select">
                                     <option selected class="select-item">Подкатегория</option>
                                     <option class="select-item">1</option>
                                     <option class="select-item">2</option>
@@ -109,21 +109,21 @@
                                     <option class="select-item">4</option>
                                 </select>
                             </div>
-                            <div class="new-advertisement-form-item">
+                            <div class="new-advertisement-form__item">
                                 <div>Бренд:</div>
-                                <input type="text" class="filter-input" placeholder="Бренд"/>
+                                <input type="text" class="input" placeholder="Бренд"/>
                             </div>
-                            <div class="new-advertisement-form-item">
+                            <div class="new-advertisement-form__item">
                                 <div>Цена товара:</div>
-                                <input type="text" class="filter-input" placeholder="0.00 BYN"/>
+                                <input type="text" class="input" placeholder="0.00 BYN"/>
                             </div>
-                            <div class="new-advertisement-form-item">
+                            <div class="new-advertisement-form__item">
                                 <div>Состояние товара (%):</div>
                                 <input class="condition" name="range" type="range" min="0" max="100" step="1"/>
                             </div>
-                            <div class="new-advertisement-form-item">
+                            <div class="new-advertisement-form__item">
                                 <div>Цвет</div>
-                                <select class="filter-select">
+                                <select class="select">
                                     <option selected class="select-item">Цвет</option>
                                     <option class="select-item">Белый</option>
                                     <option class="select-item">Чёрный</option>
@@ -131,9 +131,9 @@
                                     <option class="select-item">Зелёный</option>
                                 </select>
                             </div>
-                            <div class="new-advertisement-form-item">
-                                <div class="year">Год выпуска:</div>
-                                <select class="new-advertisement-select-year filter-select">
+                            <div class="new-advertisement-form__item year">
+                                <div>Год выпуска:</div>
+                                <select class="select">
                                     <option selected class="select-item">2021</option>
                                     <option class="select-item">1980</option>
                                     <option class="select-item">1981</option>
@@ -177,7 +177,7 @@
                                     <option class="select-item">2019</option>
                                     <option class="select-item">2020</option>
                                 </select> -
-                                <select class="new-advertisement-select-year filter-select">
+                                <select class="select">
                                     <option selected class="select-item">2021</option>
                                     <option class="select-item">1980</option>
                                     <option class="select-item">1981</option>
@@ -222,49 +222,48 @@
                                     <option class="select-item">2020</option>
                                 </select>
                             </div>
-                            <div class="new-advertisement-form-item">
+                            <div class="new-advertisement-form__item">
                                 <div>Полный комплект:</div>
                                 <input type="checkbox"/>
                             </div>
                         </div>
-                        <div class="new-advertisement-form-block">
-                            <div class="new-advertisement-form-item">
+                        <div class="new-advertisement-form__block">
+                            <div class="new-advertisement-form__item">
                                 <div>Краткое описание</div>
-                                <textarea placeholder="Краткое описание"
-                                          class="new-advertisement-textarea"></textarea><br>
+                                <textarea placeholder="Краткое описание" class="textarea"></textarea>
                             </div>
-                            <div class="new-advertisement-form-item">
+                            <div class="new-advertisement-form__item">
                                 <div>Описание</div>
-                                <textarea placeholder="Описание"></textarea>
+                                <textarea placeholder="Описание" class="textarea"></textarea>
                             </div>
-                            <div class="new-advertisement-form-item">
+                            <div class="new-advertisement-form__item">
                                 <label for="buy">Я продаю</label>
                                 <input id="buy" name="buy" value="sale" type="radio"/>
                                 <label for="sale">Хочу купить</label>
                                 <input id="sale" name="sale" value="sale" type="radio"/>
                             </div>
-                            <div class="new-advertisement-form-item">
+                            <div class="new-advertisement-form__item">
                                 <div>Статус:</div>
                                 <label for="active">Активный</label>
-                                <input id="active" name="status" alue="active" type="radio"/>
+                                <input id="active" name="status" value="active" type="radio"/>
                                 <label for="noactive">Завершённый</label>
                                 <input id="noactive" name="status" value="noactive" type="radio"/>
                             </div>
-                            <div class="new-advertisement-form-item">
+                            <div class="new-advertisement-form__item">
                                 <div>Согласен на безопасную сделку</div>
                                 <input type="checkbox"/>
                             </div>
-                            <div class="new-advertisement-form-item">
+                            <div class="new-advertisement-form__item">
                                 <div>Согласен на обмен</div>
                                 <input type="checkbox"/>
                             </div>
-                            <div class="new-advertisement-form-item">
+                            <div class="new-advertisement-form__item">
                                 <div>Согласен отправить товар почтой</div>
                                 <input type="checkbox"/>
                             </div>
                         </div>
                     </div>
-                    <input type="submit" class="registration-submit" name="completed" value="Готово"/>
+                    <input type="submit" class="submit" name="completed" value="Готово"/>
                 </form>
             </div>
         </div>

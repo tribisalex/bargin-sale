@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>User page Bargin Sale</title>
+    <title>Advertisement Bargin Sale</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
@@ -69,7 +69,7 @@
 
         <!-- advertisement -->
         <div class="ads-item">
-            <h3>Название лота (ID лота в системе)</h3>
+            <div class="ads-item__name"><h3>Название лота (ID лота в системе)</h3></div>
             <div class="carousel-description">
                 <div class="carousel">
                     <p>Каруселька с фотографиями. Но так как пока её нет, пусть будут снова НОСОЧКИ</p>
@@ -85,56 +85,56 @@
                         </thead>
                         <tbody>
                         <tr>
-                            <td>Год выпуска</td>
-                            <td>1920</td>
+                            <td data-label="Параметр ">Год выпуска</td>
+                            <td data-label="Характеристика ">1920</td>
                         </tr>
                         <tr>
-                            <td>Цвет</td>
-                            <td>синий</td>
+                            <td data-label="Параметр ">Цвет</td>
+                            <td data-label="Характеристика ">синий</td>
                         </tr>
                         <tr>
-                            <td>Тип двигателя:</td>
-                            <td>Бензин</td>
+                            <td data-label="Параметр ">Тип двигателя:</td>
+                            <td data-label="Характеристика ">Бензин</td>
                         </tr>
                         <tr>
-                            <td>Объем двигателя</td>
-                            <td>3,2</td>
+                            <td data-label="Параметр ">Объем двигателя</td>
+                            <td data-label="Характеристика ">3,2</td>
                         </tr>
                         <tr>
-                            <td>Количество дверей</td>
-                            <td>5</td>
+                            <td data-label="Параметр ">Количество дверей</td>
+                            <td data-label="Характеристика ">5</td>
                         </tr>
                         <tr>
-                            <td>Количество колес</td>
-                            <td>6</td>
+                            <td data-label="Параметр ">Количество колес</td>
+                            <td data-label="Характеристика ">6</td>
                         </tr>
                         <tr>
-                            <td>есль ли выхлоп</td>
-                            <td>Вроде</td>
+                            <td data-label="Параметр ">есль ли выхлоп</td>
+                            <td data-label="Характеристика ">Вроде</td>
                         </tr>
                         <tr>
-                            <td>Максимальная скорость</td>
-                            <td>45</td>
+                            <td data-label="Параметр ">Максимальная скорость</td>
+                            <td data-label="Характеристика ">45</td>
                         </tr>
                         <tr>
-                            <td>Есть ли магнитола</td>
-                            <td>не помню</td>
+                            <td data-label="Параметр ">Есть ли магнитола</td>
+                            <td data-label="Характеристика ">не помню</td>
                         </tr>
                         <tr>
-                            <td>Багажник</td>
-                            <td>Открывается при езде</td>
+                            <td data-label="Параметр ">Багажник</td>
+                            <td data-label="Характеристика ">Открывается при езде</td>
                         </tr>
                         <tr>
-                            <td>Ключи</td>
-                            <td>3 шт на заводе-изготовителе</td>
+                            <td data-label="Параметр ">Ключи</td>
+                            <td data-label="Характеристика ">3 шт на заводе-изготовителе</td>
                         </tr>
                         <tr>
-                            <td>Продавец является владельцем</td>
-                            <td>да</td>
+                            <td data-label="Параметр">Продавец является владельцем</td>
+                            <td data-label="Характеристика ">да</td>
                         </tr>
                         <tr>
-                            <td>Топили?</td>
-                            <td>да вроде тепло</td>
+                            <td data-label="Параметр">Топили?</td>
+                            <td data-label="Характеристика ">да вроде тепло</td>
                         </tr>
                         </tbody>
                     </table>
@@ -146,7 +146,7 @@
                         <div class="description-ads-info">
                             Просто много текста, который описывает подробно что и как
                             ты пытаешься продать тут. Надо сюда что-то обязательно
-                            написать, чтобы купили. Иначе никак не поучится продать.
+                            написать, чтобы купили. Иначе никак не получится продать.
                             Текста можно писать прям ооочень много.
                             Чтобы было видно, что ты в теме того, что продаешь
                         </div>
@@ -155,26 +155,27 @@
                                 <img src="../assets/img/seller-photo.png" alt="seller-photo"/>
                             </div>
                             <div class="seller-info">
-                                <h4>Продавец</h4>
-                                <div>Имя продавца из аккаунта</div>
-                                <div>Частное лицо или бизнесс</div>
-                                <div>Количество объявлений продавца</div>
-                                <div>Дата регистрации</div>
-                                <div>Телефон</div>
-                                <div>email</div>
-                                <div><a href="message.html">Отправить сообщение продавцу</a></div>
+                                <div class="seller-info__item">
+                                    <h4>Продавец</h4>
+                                    <div>Имя продавца из аккаунта</div>
+                                    <div>Частное лицо или бизнесс</div>
+                                    <div>Количество объявлений продавца</div>
+                                    <div>Дата регистрации</div>
+                                    <div>Телефон</div>
+                                    <div>email</div>
+                                    <div><a href="message.html">Отправить сообщение продавцу</a></div>
+                                </div>
+                                <div class="seller-info__item">
+                                    <div>Страна/город местоположения продавца</div>
+                                    <div>Дата последнего обновления</div>
+                                    <div>Количество просмотров объявления</div>
+                                    <div>Цена в бел.рублях</div>
+                                    <div>Информация о доставке</div>
+                                    <div>Информация об оплате</div>
+                                    <div>Рассматривает ли продавец предложение оп обмену</div>
+                                    <div>Пожаловаться на объявление</div>
+                                </div>
                             </div>
-                            <div class="seller-info">
-                                <div>Страна/город местоположения продавца</div>
-                                <div>Дата последнего обновления</div>
-                                <div>Количество просмотров объявления</div>
-                                <div>Цена в бел.рублях</div>
-                                <div>Информация о доставке</div>
-                                <div>Информация об оплате</div>
-                                <div>Рассматривает ли продавец предложение оп обмену</div>
-                                <div>Пожаловаться на объявление</div>
-                            </div>
-
                         </div>
                         <div class="description-ads-info">
                             Площадка не несёт ответственности за размещённые
@@ -185,7 +186,7 @@
                             лота или другими предложениями.
                         </div>
                     </div>
-                    <div class="vip-banner">
+                    <div class="mega-banner">
                         MEGA BANNER
                     </div>
                 </div>
@@ -208,116 +209,121 @@
             </div>
 
             <div class="advertisements-item">
-                <div class="advertisement">
-                    <div class="advertisement-name">
-                        <h3>Какой-то заголовок в две строки</h3>
+                <div class="advertisements-item">
+                    <div class="advertisement">
+                        <div class="advertisement-name">
+                            <h3>Какой-то заголовок в две строки</h3>
+                        </div>
+                        <div class="advertisement-img">
+                            <img src="../assets/img/97899257_w640_h640_noski-v-share.jpg" alt="img"/>
+                        </div>
+                        <div class="advertisement-description">
+                            Описание продукта, настолько красивое, что клиент будет готов купить все это без разбора. И
+                            даже
+                            товар забирать не будет: просто деньги нам отдаст и доволен останется
+                        </div>
+                        <div class="advertisement-date">
+                            10.11.2021
+                        </div>
+                        <div class="advertisement-price">
+                            800 BYN
+                        </div>
+                        <div><a href="advertisement.html">Подробнее</a></div>
+                        <div><a href="">Добавить в сравнение</a></div>
                     </div>
-                    <div class="advertisement-img">
-                        <img src="../assets/img/97899257_w640_h640_noski-v-share.jpg" alt="img"/>
-                    </div>
-                    <div class="advertisement-description">
-                        Описание продукта, настолько красивое, что клиент будет готов купить все это без разбора. И даже
-                        товар забирать не будет: просто деньги нам отдаст и доволен останется
-                    </div>
-                    <div class="advertisement-date">
-                        10.11.2021
-                    </div>
-                    <div class="advertisement-price">
-                        800 BYN
-                    </div>
-                    <div><a href="">Подробнее</a></div>
-                    <div><a href="">Добавить в сравнение</a></div>
-                </div>
 
-                <div class="advertisement">
-                    <div class="advertisement-name">
-                        <h3>Какой-то заголовок в две строки</h3>
+                    <div class="advertisement">
+                        <div class="advertisement-name">
+                            <h3>Какой-то заголовок в две строки</h3>
+                        </div>
+                        <div class="advertisement-img">
+                            <img src="../assets/img/97899257_w640_h640_noski-v-share.jpg" alt="img"/>
+                        </div>
+                        <div class="advertisement-description">
+                            Описание продукта, настолько красивое, что клиент будет готов купить все это без разбора. И
+                            даже
+                            товар забирать не будет: просто деньги нам отдаст и доволен останется
+                        </div>
+                        <div class="advertisement-date">
+                            10.11.2021
+                        </div>
+                        <div class="advertisement-price">
+                            800 BYN
+                        </div>
+                        <div><a href="advertisement.html">Подробнее</a></div>
+                        <div><a href="">Добавить в сравнение</a></div>
                     </div>
-                    <div class="advertisement-img">
-                        <img src="../assets/img/97899257_w640_h640_noski-v-share.jpg" alt="img"/>
-                    </div>
-                    <div class="advertisement-description">
-                        Описание продукта, настолько красивое, что клиент будет готов купить все это без разбора. И даже
-                        товар забирать не будет: просто деньги нам отдаст и доволен останеться
-                    </div>
-                    <div class="advertisement-date">
-                        10.11.2021
-                    </div>
-                    <div class="advertisement-price">
-                        800 BYN
-                    </div>
-                    <div><a href="">Подробнее</a></div>
-                    <div><a href="">Добавить в сравнение</a></div>
-                </div>
 
-                <div class="advertisement">
-                    <div class="advertisement-name">
-                        <h3>Какой-то заголовок в две строки</h3>
+                    <div class="advertisement">
+                        <div class="advertisement-name">
+                            <h3>Какой-то заголовок в две строки</h3>
+                        </div>
+                        <div class="advertisement-img">
+                            <img src="../assets/img/97899257_w640_h640_noski-v-share.jpg" alt="img"/>
+                        </div>
+                        <div class="advertisement-description">
+                            Описание продукта, настолько красивое, что клиент будет готов купить все это без разбора. И
+                            даже
+                            товар забирать не будет: просто деньги нам отдаст и доволен останется
+                        </div>
+                        <div class="advertisement-date">
+                            10.11.2021
+                        </div>
+                        <div class="advertisement-price">
+                            800 BYN
+                        </div>
+                        <div><a href="advertisement.html">Подробнее</a></div>
+                        <div><a href="">Добавить в сравнение</a></div>
                     </div>
-                    <div class="advertisement-img">
-                        <img src="../assets/img/97899257_w640_h640_noski-v-share.jpg" alt="img"/>
-                    </div>
-                    <div class="advertisement-description">
-                        Описание продукта, настолько красивое, что клиент будет готов купить все это без разбора. И даже
-                        товар забирать не будет: просто деньги нам отдаст и доволен останеться
-                    </div>
-                    <div class="advertisement-date">
-                        10.11.2021
-                    </div>
-                    <div class="advertisement-price">
-                        800 BYN
-                    </div>
-                    <div><a href="">Подробнее</a></div>
-                    <div><a href="">Добавить в сравнение</a></div>
-                </div>
 
-                <div class="advertisement">
-                    <div class="advertisement-name">
-                        <h3>Какой-то заголовок в две строки</h3>
+                    <div class="advertisement">
+                        <div class="advertisement-name">
+                            <h3>Какой-то заголовок в две строки</h3>
+                        </div>
+                        <div class="advertisement-img">
+                            <img src="../assets/img/97899257_w640_h640_noski-v-share.jpg" alt="img"/>
+                        </div>
+                        <div class="advertisement-description">
+                            Описание продукта, настолько красивое, что клиент будет готов купить все это без разбора. И
+                            даже
+                            товар забирать не будет: просто деньги нам отдаст и доволен останется
+                        </div>
+                        <div class="advertisement-date">
+                            10.11.2021
+                        </div>
+                        <div class="advertisement-price">
+                            800 BYN
+                        </div>
+                        <div><a href="advertisement.html">Подробнее</a></div>
+                        <div><a href="">Добавить в сравнение</a></div>
                     </div>
-                    <div class="advertisement-img">
-                        <img src="../assets/img/97899257_w640_h640_noski-v-share.jpg" alt="img"/>
-                    </div>
-                    <div class="advertisement-description">
-                        Описание продукта, настолько красивое, что клиент будет готов купить все это без разбора. И
-                        даже товар забирать не будет: просто деньги нам отдаст и доволен останеться
-                    </div>
-                    <div class="advertisement-date">
-                        10.11.2021
-                    </div>
-                    <div class="advertisement-price">
-                        800 BYN
-                    </div>
-                    <div><a href="">Подробнее</a></div>
-                    <div><a href="">Добавить в сравнение</a></div>
                 </div>
             </div>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="footer-item">
+                    <div>
+                        <a href="#">Некоторая правовая информация об обладателе ресурса</a><br>
+                        <a href="#">Контакты для связи</a><br>
+                        <a href="#">Ссылка на социальные сети</a><br>
+                        <a href="#">Ссылка на скачивание приложения для разных платформ</a><br>
+                        <a href="#">Ссылка для перехода на страницу для рекламодателей</a><br>
+                        <a href="#">Текущее количество объявлений в базе</a><br>
+                        <a href="#">Некоторая правовая информация об обладателе ресурса</a><br>
+                    </div>
+                    <div>
+                        <a href="#">Политика о данных пользователей</a><br>
+                        <a href="#"> Политика использования cookie</a><br>
+                        <a href="#">Способы оплаты и цены</a><br>
+                        <a href="#">Помощь</a><br>
+                        <a href="#">Вакансии</a><br>
+                        <a href="#">О сайте</a><br>
+                        <a href="#">Частые вопросы</a><br>
+                    </div>
+                </div>
+            </footer>
         </div>
-
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="footer-item">
-                <div>
-                    <a href="#">Некоторая правовая информация об обладателе ресурса</a><br>
-                    <a href="#">Контакты для связи</a><br>
-                    <a href="#">Ссылка на социальные сети</a><br>
-                    <a href="#">Ссылка на скачивание приложения для разных платформ</a><br>
-                    <a href="#">Ссылка для перехода на страницу для рекламодателей</a><br>
-                    <a href="#">Текущее количество объявлений в базе</a><br>
-                    <a href="#">Некоторая правовая информация об обладателе ресурса</a><br>
-                </div>
-                <div>
-                    <a href="#">Политика о данных пользователей</a><br>
-                    <a href="#"> Политика использования cookie</a><br>
-                    <a href="#">Способы оплаты и цены</a><br>
-                    <a href="#">Помощь</a><br>
-                    <a href="#">Вакансии</a><br>
-                    <a href="#">О сайте</a><br>
-                    <a href="#">Частые вопросы</a><br>
-                </div>
-            </div>
-        </footer>
-
     </div>
 </div>
 </body>
